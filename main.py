@@ -1,8 +1,13 @@
 from pygame_functions import *
 import math, random, time, pickle
 
+
+
+# to implement biomes later on 
+thebackground[["black",standard]]
+
 screenSize(1000,1000)
-setBackgroundColour("black")
+setBackgroundColour(thebackground[0][0])
 
 
 class Creature:
@@ -17,7 +22,7 @@ class Creature:
 
 
 setAutoUpdate(False)
-c1 = Creature(random.randint(0,1000),random.randint(0,1000), "enemy.png", random.randint(10,100)) 
+c1 = Creature(random.randint(0,1000),random.randint(0,1000), "New Piskel-2.png (1).png", random.randint(10,100)) 
 
 updateDisplay()
         
